@@ -1,0 +1,33 @@
+@url = https://todo.api.showcode.dk/api
+@jwt_token = eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJKb24gQmVydGVsc2VuIiwic3ViIjoiam9uIiwiZXhwIjoxNzMzMzg5NTQzLCJyb2xlcyI6InVzZXIiLCJ1c2VybmFtZSI6ImpvbiJ9.3lJfBUIV8rEsYodZTwfIQumsEixm8HvQztTRjx7d1FY
+
+###
+GET {{url}}/todos
+
+### 
+POST {{url}}/auth/register/
+Accept: application/json
+Content-Type: application/json
+
+{
+    "username": "jon",
+    "password": "jon123"
+}
+
+###
+POST {{url}}/auth/login/
+Accept: application/json
+Content-Type: application/json
+
+{
+    "username": "jon",
+    "password": "jon123"
+}
+
+###
+GET {{url}}/todos/mine
+Accept: application/json
+Authorization: Bearer {{jwt_token}}
+
+
+
