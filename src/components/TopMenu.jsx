@@ -15,7 +15,7 @@ function TopMenu() {
           <NavLink to='/'>Home</NavLink>
         </li>
         <li>
-          <NavLink to='/todos'>Todos</NavLink>
+          <NavLink to='/todos'>All Todos</NavLink>
         </li>
         <li>
           <NavLink to='/login'>Login</NavLink>
